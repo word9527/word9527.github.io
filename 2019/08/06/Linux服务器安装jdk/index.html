@@ -8,19 +8,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>妖刀鬼彻</title>
+  <title>Linux 服务器安装jdk | 妖刀鬼彻</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    <!-- 辅助函数（Helpers）https://hexo.io/zh-cn/docs/helpers.html#%E6%9D%A1%E4%BB%B6%E5%87%BD%E6%95%B0 -->
-    <meta name="keywords" content>
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="妖刀鬼彻">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人1、服务器：阿里云2、操作系统：Centos73、使用的的可视化工具Xftp6和Xshell 下载jdk 根据自己的需要下载安装包http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html通过Xfp6 把安装包放在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux 服务器安装jdk">
+<meta property="og:url" content="http://yoursite.com/2019/08/06/Linux服务器安装jdk/index.html">
 <meta property="og:site_name" content="妖刀鬼彻">
+<meta property="og:description" content="小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人1、服务器：阿里云2、操作系统：Centos73、使用的的可视化工具Xftp6和Xshell 下载jdk 根据自己的需要下载安装包http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html通过Xfp6 把安装包放在">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-08-07T06:06:58.141Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="妖刀鬼彻">
+<meta name="twitter:title" content="Linux 服务器安装jdk">
+<meta name="twitter:description" content="小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人1、服务器：阿里云2、操作系统：Centos73、使用的的可视化工具Xftp6和Xshell 下载jdk 根据自己的需要下载安装包http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html通过Xfp6 把安装包放在">
   
     <link rel="alternative" href="/atom.xml" title="妖刀鬼彻" type="application/atom+xml">
   
@@ -181,155 +182,25 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <script src="/assets/oauthcallback.browser.js"></script>
-  
-  <script>
-    Oauthcallback();
-  </script>
-
-
-  
-    <article id="post-linux安装mysql" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Linux服务器安装jdk" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class=" article-header">
   
   
-    <h1 itemprop="name">
-	
-	      <a class="article-title" href="/2019/08/07/linux安装mysql/" target="_blank">linux安装mysql</a>
-        
+    <h1 class="article-title" itemprop="name">
+      Linux 服务器安装jdk
     </h1>
   
 
 
   
   
-<a href="/2019/08/07/linux安装mysql/" class="archive-article-date">
-        <time datetime="2019-08-07T05:30:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-07</time>
-</a>
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
 
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>1、服务器：阿里云<br>2、操作系统：Centos7<br>3、使用的的可视化工具Xftp6和Xshell</p>
-<hr>
-<p>所有平台的 MySQL 下载地址为： <a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">MySQL 下载</a> 。 挑选你需要的 MySQL Community Server 版本及对应的平台。</p>
-<hr>
-<h3 id="安装前，我们可以检测系统是否自带安装-MySQL"><a href="#安装前，我们可以检测系统是否自带安装-MySQL" class="headerlink" title="安装前，我们可以检测系统是否自带安装 MySQL:"></a>安装前，我们可以检测系统是否自带安装 MySQL:</h3><blockquote>
-<p>rpm -qa | grep mysql</p>
-</blockquote>
-<h3 id="如果你系统有安装，那可以选择进行卸载"><a href="#如果你系统有安装，那可以选择进行卸载" class="headerlink" title="如果你系统有安装，那可以选择进行卸载:"></a>如果你系统有安装，那可以选择进行卸载:</h3><blockquote>
-<p>rpm -e mysql　　// 普通删除模式<br>rpm -e –nodeps mysql　　// 强力删除模式，如果使用上面命令删除时，提示有依赖的其它文件，则用该命令可以对其进行强力删除</p>
-</blockquote>
-<h3 id="准备好了就开始安装Mysql-一行一行的执行一下指令"><a href="#准备好了就开始安装Mysql-一行一行的执行一下指令" class="headerlink" title="准备好了就开始安装Mysql,一行一行的执行一下指令"></a>准备好了就开始安装Mysql,一行一行的执行一下指令</h3><blockquote>
-<p>wget <a href="http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm" target="_blank" rel="noopener">http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm</a><br>rpm -ivh mysql-community-release-el7-5.noarch.rpm<br>yum update<br>yum install mysql-server</p>
-</blockquote>
-<h3 id="权限设置"><a href="#权限设置" class="headerlink" title="权限设置:"></a>权限设置:</h3><blockquote>
-<p>chown mysql:mysql -R /var/lib/mysql</p>
-</blockquote>
-<h3 id="初始化-MySQL："><a href="#初始化-MySQL：" class="headerlink" title="初始化 MySQL："></a>初始化 MySQL：</h3><blockquote>
-<p>mysqld –initialize</p>
-</blockquote>
-<h3 id="启动-MySQL："><a href="#启动-MySQL：" class="headerlink" title="启动 MySQL："></a>启动 MySQL：</h3><blockquote>
-<p>systemctl start mysqld</p>
-</blockquote>
-<h3 id="查看-MySQL-运行状态："><a href="#查看-MySQL-运行状态：" class="headerlink" title="查看 MySQL 运行状态："></a>查看 MySQL 运行状态：</h3><blockquote>
-<p>systemctl status mysqld</p>
-</blockquote>
-<h3 id="验证安装"><a href="#验证安装" class="headerlink" title="验证安装"></a>验证安装</h3><blockquote>
-<p>mysqladmin –version</p>
-</blockquote>
-<p>如果以上命令执行后未输出任何信息，说明你的Mysql未安装成功。</p>
-<h3 id="登录Mysql"><a href="#登录Mysql" class="headerlink" title="登录Mysql"></a>登录Mysql</h3><p>默认情况下 MySQL 服务器的登录密码为空，所以本实例不需要输入密码。</p>
-<blockquote>
-<p>mysql</p>
-</blockquote>
-<p>以上命令执行后会输出 mysql&gt;提示符，这说明你已经成功连接到Mysql服务器上，你可以在 mysql&gt; 提示符执行SQL命令：</p>
-<h3 id="Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码："><a href="#Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码：" class="headerlink" title="Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码："></a>Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码：</h3><p>mysqladmin -u root password “密码”</p>
-<blockquote>
-<p>mysqladmin -u root password “new_password”;</p>
-</blockquote>
-<h3 id="设置远程访问权限"><a href="#设置远程访问权限" class="headerlink" title="设置远程访问权限"></a>设置远程访问权限</h3><p>grant all privileges on <em>.</em> to ‘用户名ed by ‘密码</p>
-<blockquote>
-<p>grant all privileges on <em>.</em> to ‘root’ @’%’ identified by ‘123456’;<br>flush privileges;</p>
-</blockquote>
-<h3 id="开放端口：3306"><a href="#开放端口：3306" class="headerlink" title="开放端口：3306"></a>开放端口：3306</h3><blockquote>
-<p>开启3306端口:<br>firewall-cmd –zone=public –add-port=3306/tcp –permanent<br>刷新防火墙:<br>firewall-cmd –reload </p>
-</blockquote>
-<hr>
-<p>这里设置完之后，就可以在其他局域网内电脑上用Navicat连接一下看看能不能连接了,如果是阿里云的服务器还要在阿里云控制台里面设置3306端口</p>
-<h3 id="设置开机启动"><a href="#设置开机启动" class="headerlink" title="设置开机启动"></a>设置开机启动</h3><blockquote>
-<p>chkconfig mysqld on</p>
-</blockquote>
-<hr>
-<p>至此，我们的mysql数据库就已经安装完成，并能随系统启动和外部访问了。</p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2019/08/07/linux安装mysql/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Linux服务器安装jdk" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class=" article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	      <a class="article-title" href="/2019/08/06/Linux服务器安装jdk/" target="_blank">Linux 服务器安装jdk</a>
-        
-    </h1>
-  
-
-
-  
-  
 <a href="/2019/08/06/Linux服务器安装jdk/" class="archive-article-date">
         <time datetime="2019-08-06T03:23:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-06</time>
 </a>
@@ -367,7 +238,56 @@
     
 
     
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>万山千水总是情，就给1块行不行<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.jpg">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
 
+    
+      <div> 
+        <ul class="post-copyright">
+          <li>
+            <strong>本文作者：</strong>
+            妖刀鬼彻
+          </li>
+          <li>
+            <strong>本文链接：</strong>
+            <a href="http://yoursite.com/2019/08/06/Linux服务器安装jdk/" title="Linux 服务器安装jdk" target="_blank">http://yoursite.com/2019/08/06/Linux服务器安装jdk/</a>
+          </li>
+          <li>
+            <strong>版权声明： </strong>
+            本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow" target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
+          </li>
+        </ul>
+      </div>
     
 
   </div>
@@ -377,16 +297,85 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2019/08/06/Linux服务器安装jdk/">展开全文 >></a>
-    </p>
+
     
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/06/Linux服务器安装jdk/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+    <a href="/2019/08/07/linux安装mysql/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          linux安装mysql
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -407,92 +396,38 @@
 
 
 
+
+
+
+
+
+
+  <div id="giteement-ctn"></div>
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class=" article-header">
+    <link rel="stylesheet" href="/assets/default.css">
+    <script src="/assets/giteement.browser.js"></script>
   
-  
-    <h1 itemprop="name">
-	
-	      <a class="article-title" href="/2019/08/06/hello-world/" target="_blank">Hello World</a>
-        
-    </h1>
-  
-
-
-  
-  
-<a href="/2019/08/06/hello-world/" class="archive-article-date">
-        <time datetime="2019-08-06T02:50:51.364Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-06</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2019/08/06/hello-world/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
+  <script>
+  <!-- id: "Linux 服务器安装jdk" -->
+  var giteement = new Giteement({
+    id: '20190806112346',
+    owner: 'overin9527.outlook.com',
+    repo: 'hexo评论',
+    backcall_uri: 'https://word9527.github.io/',
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+    oauth: {
+      client_id: 'fa64d1626588b5ba43b549974c8f776f0c45afaeec15c0d82ea0d3e8c46c5fd7',
+      client_secret: '00dffc0e1d65ec219866528d8689c463f09cf18e867e927bf9e7db2599c0f46c'
+    },
+  })
+  giteement.render('giteement-ctn')
+  </script>
 
 
 
 
-  
-  
+
+
 
 
           </div>
@@ -530,8 +465,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

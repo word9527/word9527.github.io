@@ -11,17 +11,18 @@
   <title>Linux 服务器安装jdk | 妖刀鬼彻</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人1、服务器：阿里云2、操作系统：Centos73、使用的的可视化工具Xftp6和Xshell 下载jdk 根据自己的需要下载安装包http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html通过Xfp6 把安装包放在">
+  <meta name="description" content="小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人1、服务器：阿里云2、操作系统：Centos73、使用的的可视化工具Xftp6和Xshell">
+<meta name="keywords" content="linux,Contos">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux 服务器安装jdk">
 <meta property="og:url" content="http://yoursite.com/2019/08/06/Linux服务器安装jdk/index.html">
 <meta property="og:site_name" content="妖刀鬼彻">
-<meta property="og:description" content="小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人1、服务器：阿里云2、操作系统：Centos73、使用的的可视化工具Xftp6和Xshell 下载jdk 根据自己的需要下载安装包http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html通过Xfp6 把安装包放在">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-07T06:06:58.141Z">
+<meta property="og:description" content="小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人1、服务器：阿里云2、操作系统：Centos73、使用的的可视化工具Xftp6和Xshell">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-09-16T07:42:38.632Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux 服务器安装jdk">
-<meta name="twitter:description" content="小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人1、服务器：阿里云2、操作系统：Centos73、使用的的可视化工具Xftp6和Xshell 下载jdk 根据自己的需要下载安装包http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html通过Xfp6 把安装包放在">
+<meta name="twitter:description" content="小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人1、服务器：阿里云2、操作系统：Centos73、使用的的可视化工具Xftp6和Xshell">
   
     <link rel="alternative" href="/atom.xml" title="妖刀鬼彻" type="application/atom+xml">
   
@@ -76,7 +77,7 @@
 		  <h1 class="header-author"><a href="/">妖刀鬼彻</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">慢慢长路，伴你同行</p>
+		<p class="header-subtitle">慢长路,伴你同行</p>
 		
 
 		<nav class="header-menu">
@@ -113,6 +114,10 @@
 			</div>
 		<!-- 网易云音乐插件 -->
 		
+			<div style="position:absolute; bottom:120px left:auto; width:85%">
+				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="52" src="//music.163.com/outchain/player?type=2&id=574883859&auto=1&height=32"></iframe>
+			</div>
+		
 		</nav>
 	</header>		
 </div>
@@ -136,7 +141,7 @@
 			  <h1 class="header-author js-header-author">妖刀鬼彻</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>慢慢长路，伴你同行<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>慢长路,伴你同行<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -212,6 +217,8 @@
   <div class="article-entry" itemprop="articleBody">
     
     <p>小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人<br>1、服务器：阿里云<br>2、操作系统：Centos7<br>3、使用的的可视化工具Xftp6和Xshell</p>
+<a id="more"></a>
+
 <h3 id="下载jdk-根据自己的需要下载安装包http-www-oracle-com-technetwork-java-javase-downloads-jdk8-downloads-2133151-html"><a href="#下载jdk-根据自己的需要下载安装包http-www-oracle-com-technetwork-java-javase-downloads-jdk8-downloads-2133151-html" class="headerlink" title="下载jdk 根据自己的需要下载安装包http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"></a>下载jdk 根据自己的需要下载安装包<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></h3><p>通过Xfp6 把安装包放在usr/local下<br>通过linux指令去往文件夹的路径下面</p>
 <blockquote>
 <p>cd usr/local</p>
@@ -294,7 +301,27 @@
   </div>
   <div class="article-info article-info-index">
     
+    <div class="article-pop-out tagcloud">
+      <i class="icon-tuding"></i>
+      <a class="article-tag-list-link color3">置顶</a>
+    </div>
     
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Contos</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
@@ -390,6 +417,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载jdk-根据自己的需要下载安装包http-www-oracle-com-technetwork-java-javase-downloads-jdk8-downloads-2133151-html"><span class="toc-number">1.</span> <span class="toc-text">下载jdk 根据自己的需要下载安装包http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#之后解压jdk文件Linux指令tar-zxvf-jdk文件压缩包名"><span class="toc-number">2.</span> <span class="toc-text">之后解压jdk文件Linux指令tar -zxvf jdk文件压缩包名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#编辑配置文件profile"><span class="toc-number">3.</span> <span class="toc-text">编辑配置文件profile</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#最后输入"><span class="toc-number">4.</span> <span class="toc-text">最后输入</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
@@ -544,6 +584,18 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Contos</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Centos</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>

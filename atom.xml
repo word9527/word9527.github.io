@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>妖刀鬼彻</title>
   
-  <subtitle>慢慢长路，伴你同行</subtitle>
+  <subtitle>慢长路,伴你同行</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-16T06:27:59.174Z</updated>
+  <updated>2019-09-16T06:59:36.079Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,21 +21,23 @@
     <link href="http://yoursite.com/2019/09/16/%E5%AE%89%E8%A3%85docker%E5%92%8C%E4%BD%BF%E7%94%A8docker%E5%AE%89%E8%A3%85rabbiemq%E5%AE%B9%E5%99%A8/"/>
     <id>http://yoursite.com/2019/09/16/安装docker和使用docker安装rabbiemq容器/</id>
     <published>2019-09-16T04:25:34.000Z</published>
-    <updated>2019-09-16T06:27:59.174Z</updated>
+    <updated>2019-09-16T06:59:36.079Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h3><blockquote><p>yum install docker</p></blockquote><hr><h3 id="启动docker"><a href="#启动docker" class="headerlink" title="启动docker"></a>启动docker</h3><blockquote><p>systemctl start docker<br>停止docker<br>systemctl stop docker<br>重启docker<br>systemctl restart  docker</p></blockquote><hr><h3 id="查看版本-显示版本号即成功"><a href="#查看版本-显示版本号即成功" class="headerlink" title="查看版本 显示版本号即成功"></a>查看版本 显示版本号即成功</h3><blockquote><p>docker -v</p></blockquote><hr><h3 id="下载rabbitmq-去官网搜索"><a href="#下载rabbitmq-去官网搜索" class="headerlink" title="下载rabbitmq   去官网搜索"></a>下载rabbitmq   <a href="https://hub.docker.com/search/?q=rabbitmq&type=image" title="去官网搜索" target="_blank" rel="noopener">去官网搜索</a></h3><blockquote><p>也可以使用命令搜索    docker search 容器名称<br>docker search rabbitmq</p></blockquote><hr><h3 id="下载rabbitmq-使用命令docker-pull-容器名称"><a href="#下载rabbitmq-使用命令docker-pull-容器名称" class="headerlink" title="下载rabbitmq   使用命令docker pull 容器名称"></a>下载rabbitmq   使用命令docker pull 容器名称</h3><blockquote><p>docker pull rabbitmq:3.8.0-rc.1-management</p></blockquote><hr><h3 id="查看下载的容器"><a href="#查看下载的容器" class="headerlink" title="查看下载的容器"></a>查看下载的容器</h3><blockquote><p>docker images</p></blockquote><hr><h3 id="运行rabbitmq"><a href="#运行rabbitmq" class="headerlink" title="运行rabbitmq"></a>运行rabbitmq</h3><blockquote><p>-d：后台运行 -p:设置端口 –name:自定义名称 90cce17c1af8:镜像id<br>docker run -d -p 5672:5672 -p 15672:15672 –name myrabbitmq 90cce17c1af8</p></blockquote><hr><h3 id="查看运行"><a href="#查看运行" class="headerlink" title="查看运行"></a>查看运行</h3><blockquote><p>docker ps -a</p></blockquote><hr><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><blockquote><p>ip:15672 显示登陆页面即为成功<br>登录名：guest<br>密码：guest</p></blockquote><h3 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h3><blockquote><p>退出一个正在运行的容器<br>docker stop 容器id<br>启动一个已经停止的容器，先使用docker ps -a命令查看容器信息，再使用donker start 容器id 启动<br>删除容器，先关闭容器再使用docker rm 容器id命令删除容器</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h3 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h3><blockquote><p>yum install docker</p></blockquote><hr><a id="more"></a><h3 id="启动docker"><a href="#启动docker" class="headerlink" title="启动docker"></a>启动docker</h3><blockquote><p>systemctl start docker<br>停止docker<br>systemctl stop docker<br>重启docker<br>systemctl restart  docker</p></blockquote><hr><h3 id="查看版本-显示版本号即成功"><a href="#查看版本-显示版本号即成功" class="headerlink" title="查看版本 显示版本号即成功"></a>查看版本 显示版本号即成功</h3><blockquote><p>docker -v</p></blockquote><hr><h3 id="下载rabbitmq-去官网搜索"><a href="#下载rabbitmq-去官网搜索" class="headerlink" title="下载rabbitmq   去官网搜索"></a>下载rabbitmq   <a href="https://hub.docker.com/search/?q=rabbitmq&type=image" title="去官网搜索" target="_blank" rel="noopener">去官网搜索</a></h3><blockquote><p>也可以使用命令搜索    docker search 容器名称<br>docker search rabbitmq</p></blockquote><hr><h3 id="下载rabbitmq-使用命令docker-pull-容器名称"><a href="#下载rabbitmq-使用命令docker-pull-容器名称" class="headerlink" title="下载rabbitmq   使用命令docker pull 容器名称"></a>下载rabbitmq   使用命令docker pull 容器名称</h3><blockquote><p>docker pull rabbitmq:3.8.0-rc.1-management</p></blockquote><hr><h3 id="查看下载的容器"><a href="#查看下载的容器" class="headerlink" title="查看下载的容器"></a>查看下载的容器</h3><blockquote><p>docker images</p></blockquote><hr><h3 id="运行rabbitmq"><a href="#运行rabbitmq" class="headerlink" title="运行rabbitmq"></a>运行rabbitmq</h3><blockquote><p>-d：后台运行 -p:设置端口 –name:自定义名称 90cce17c1af8:镜像id<br>docker run -d -p 5672:5672 -p 15672:15672 –name myrabbitmq 90cce17c1af8</p></blockquote><hr><h3 id="查看运行"><a href="#查看运行" class="headerlink" title="查看运行"></a>查看运行</h3><blockquote><p>docker ps -a</p></blockquote><hr><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><blockquote><p>ip:15672 显示登陆页面即为成功<br>登录名：guest<br>密码：guest</p></blockquote><h3 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h3><blockquote><p>退出一个正在运行的容器<br>docker stop 容器id<br>启动一个已经停止的容器，先使用docker ps -a命令查看容器信息，再使用donker start 容器id 启动<br>删除容器，先关闭容器再使用docker rm 容器id命令删除容器</p></blockquote>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h3 id=&quot;安装docker&quot;&gt;&lt;a href=&quot;#安装docker&quot; class=&quot;headerlink&quot; title=&quot;安装docker&quot;&gt;&lt;/a&gt;安装docker&lt;/h3&gt;&lt;blockquote&gt;
+      &lt;h3 id=&quot;安装docker&quot;&gt;&lt;a href=&quot;#安装docker&quot; class=&quot;headerlink&quot; title=&quot;安装docker&quot;&gt;&lt;/a&gt;安装docker&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;yum install docker&lt;/p&gt;
-&lt;/blockquo
-      
+&lt;/blockquote&gt;
+&lt;hr&gt;
     
     </summary>
     
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+      <category term="Contos" scheme="http://yoursite.com/tags/Contos/"/>
     
   </entry>
   
@@ -44,21 +46,22 @@
     <link href="http://yoursite.com/2019/08/07/linux%E5%AE%89%E8%A3%85mysql/"/>
     <id>http://yoursite.com/2019/08/07/linux安装mysql/</id>
     <published>2019-08-07T05:30:21.000Z</published>
-    <updated>2019-08-07T06:07:07.814Z</updated>
+    <updated>2019-09-16T06:58:07.642Z</updated>
     
-    <content type="html"><![CDATA[<p>1、服务器：阿里云<br>2、操作系统：Centos7<br>3、使用的的可视化工具Xftp6和Xshell</p><hr><p>所有平台的 MySQL 下载地址为： <a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">MySQL 下载</a> 。 挑选你需要的 MySQL Community Server 版本及对应的平台。</p><hr><h3 id="安装前，我们可以检测系统是否自带安装-MySQL"><a href="#安装前，我们可以检测系统是否自带安装-MySQL" class="headerlink" title="安装前，我们可以检测系统是否自带安装 MySQL:"></a>安装前，我们可以检测系统是否自带安装 MySQL:</h3><blockquote><p>rpm -qa | grep mysql</p></blockquote><h3 id="如果你系统有安装，那可以选择进行卸载"><a href="#如果你系统有安装，那可以选择进行卸载" class="headerlink" title="如果你系统有安装，那可以选择进行卸载:"></a>如果你系统有安装，那可以选择进行卸载:</h3><blockquote><p>rpm -e mysql　　// 普通删除模式<br>rpm -e –nodeps mysql　　// 强力删除模式，如果使用上面命令删除时，提示有依赖的其它文件，则用该命令可以对其进行强力删除</p></blockquote><h3 id="准备好了就开始安装Mysql-一行一行的执行一下指令"><a href="#准备好了就开始安装Mysql-一行一行的执行一下指令" class="headerlink" title="准备好了就开始安装Mysql,一行一行的执行一下指令"></a>准备好了就开始安装Mysql,一行一行的执行一下指令</h3><blockquote><p>wget <a href="http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm" target="_blank" rel="noopener">http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm</a><br>rpm -ivh mysql-community-release-el7-5.noarch.rpm<br>yum update<br>yum install mysql-server</p></blockquote><h3 id="权限设置"><a href="#权限设置" class="headerlink" title="权限设置:"></a>权限设置:</h3><blockquote><p>chown mysql:mysql -R /var/lib/mysql</p></blockquote><h3 id="初始化-MySQL："><a href="#初始化-MySQL：" class="headerlink" title="初始化 MySQL："></a>初始化 MySQL：</h3><blockquote><p>mysqld –initialize</p></blockquote><h3 id="启动-MySQL："><a href="#启动-MySQL：" class="headerlink" title="启动 MySQL："></a>启动 MySQL：</h3><blockquote><p>systemctl start mysqld</p></blockquote><h3 id="查看-MySQL-运行状态："><a href="#查看-MySQL-运行状态：" class="headerlink" title="查看 MySQL 运行状态："></a>查看 MySQL 运行状态：</h3><blockquote><p>systemctl status mysqld</p></blockquote><h3 id="验证安装"><a href="#验证安装" class="headerlink" title="验证安装"></a>验证安装</h3><blockquote><p>mysqladmin –version</p></blockquote><p>如果以上命令执行后未输出任何信息，说明你的Mysql未安装成功。</p><h3 id="登录Mysql"><a href="#登录Mysql" class="headerlink" title="登录Mysql"></a>登录Mysql</h3><p>默认情况下 MySQL 服务器的登录密码为空，所以本实例不需要输入密码。</p><blockquote><p>mysql</p></blockquote><p>以上命令执行后会输出 mysql&gt;提示符，这说明你已经成功连接到Mysql服务器上，你可以在 mysql&gt; 提示符执行SQL命令：</p><h3 id="Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码："><a href="#Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码：" class="headerlink" title="Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码："></a>Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码：</h3><p>mysqladmin -u root password “密码”</p><blockquote><p>mysqladmin -u root password “new_password”;</p></blockquote><h3 id="设置远程访问权限"><a href="#设置远程访问权限" class="headerlink" title="设置远程访问权限"></a>设置远程访问权限</h3><p>grant all privileges on <em>.</em> to ‘用户名ed by ‘密码</p><blockquote><p>grant all privileges on <em>.</em> to ‘root’ @’%’ identified by ‘123456’;<br>flush privileges;</p></blockquote><h3 id="开放端口：3306"><a href="#开放端口：3306" class="headerlink" title="开放端口：3306"></a>开放端口：3306</h3><blockquote><p>开启3306端口:<br>firewall-cmd –zone=public –add-port=3306/tcp –permanent<br>刷新防火墙:<br>firewall-cmd –reload </p></blockquote><hr><p>这里设置完之后，就可以在其他局域网内电脑上用Navicat连接一下看看能不能连接了,如果是阿里云的服务器还要在阿里云控制台里面设置3306端口</p><h3 id="设置开机启动"><a href="#设置开机启动" class="headerlink" title="设置开机启动"></a>设置开机启动</h3><blockquote><p>chkconfig mysqld on</p></blockquote><hr><p>至此，我们的mysql数据库就已经安装完成，并能随系统启动和外部访问了。</p>]]></content>
+    <content type="html"><![CDATA[<p>1、服务器：阿里云<br>2、操作系统：Centos7<br>3、使用的的可视化工具Xftp6和Xshell</p><hr><p>所有平台的 MySQL 下载地址为： <a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">MySQL 下载</a> 。 挑选你需要的 MySQL Community Server 版本及对应的平台。</p><a id="more"></a><hr><h3 id="安装前，我们可以检测系统是否自带安装-MySQL"><a href="#安装前，我们可以检测系统是否自带安装-MySQL" class="headerlink" title="安装前，我们可以检测系统是否自带安装 MySQL:"></a>安装前，我们可以检测系统是否自带安装 MySQL:</h3><blockquote><p>rpm -qa | grep mysql</p></blockquote><h3 id="如果你系统有安装，那可以选择进行卸载"><a href="#如果你系统有安装，那可以选择进行卸载" class="headerlink" title="如果你系统有安装，那可以选择进行卸载:"></a>如果你系统有安装，那可以选择进行卸载:</h3><blockquote><p>rpm -e mysql　　// 普通删除模式<br>rpm -e –nodeps mysql　　// 强力删除模式，如果使用上面命令删除时，提示有依赖的其它文件，则用该命令可以对其进行强力删除</p></blockquote><h3 id="准备好了就开始安装Mysql-一行一行的执行一下指令"><a href="#准备好了就开始安装Mysql-一行一行的执行一下指令" class="headerlink" title="准备好了就开始安装Mysql,一行一行的执行一下指令"></a>准备好了就开始安装Mysql,一行一行的执行一下指令</h3><blockquote><p>wget <a href="http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm" target="_blank" rel="noopener">http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm</a><br>rpm -ivh mysql-community-release-el7-5.noarch.rpm<br>yum update<br>yum install mysql-server</p></blockquote><h3 id="权限设置"><a href="#权限设置" class="headerlink" title="权限设置:"></a>权限设置:</h3><blockquote><p>chown mysql:mysql -R /var/lib/mysql</p></blockquote><h3 id="初始化-MySQL："><a href="#初始化-MySQL：" class="headerlink" title="初始化 MySQL："></a>初始化 MySQL：</h3><blockquote><p>mysqld –initialize</p></blockquote><h3 id="启动-MySQL："><a href="#启动-MySQL：" class="headerlink" title="启动 MySQL："></a>启动 MySQL：</h3><blockquote><p>systemctl start mysqld</p></blockquote><h3 id="查看-MySQL-运行状态："><a href="#查看-MySQL-运行状态：" class="headerlink" title="查看 MySQL 运行状态："></a>查看 MySQL 运行状态：</h3><blockquote><p>systemctl status mysqld</p></blockquote><h3 id="验证安装"><a href="#验证安装" class="headerlink" title="验证安装"></a>验证安装</h3><blockquote><p>mysqladmin –version</p></blockquote><p>如果以上命令执行后未输出任何信息，说明你的Mysql未安装成功。</p><h3 id="登录Mysql"><a href="#登录Mysql" class="headerlink" title="登录Mysql"></a>登录Mysql</h3><p>默认情况下 MySQL 服务器的登录密码为空，所以本实例不需要输入密码。</p><blockquote><p>mysql</p></blockquote><p>以上命令执行后会输出 mysql&gt;提示符，这说明你已经成功连接到Mysql服务器上，你可以在 mysql&gt; 提示符执行SQL命令：</p><h3 id="Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码："><a href="#Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码：" class="headerlink" title="Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码："></a>Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码：</h3><p>mysqladmin -u root password “密码”</p><blockquote><p>mysqladmin -u root password “new_password”;</p></blockquote><h3 id="设置远程访问权限"><a href="#设置远程访问权限" class="headerlink" title="设置远程访问权限"></a>设置远程访问权限</h3><p>grant all privileges on <em>.</em> to ‘用户名ed by ‘密码</p><blockquote><p>grant all privileges on <em>.</em> to ‘root’ @’%’ identified by ‘123456’;<br>flush privileges;</p></blockquote><h3 id="开放端口：3306"><a href="#开放端口：3306" class="headerlink" title="开放端口：3306"></a>开放端口：3306</h3><blockquote><p>开启3306端口:<br>firewall-cmd –zone=public –add-port=3306/tcp –permanent<br>刷新防火墙:<br>firewall-cmd –reload </p></blockquote><hr><p>这里设置完之后，就可以在其他局域网内电脑上用Navicat连接一下看看能不能连接了,如果是阿里云的服务器还要在阿里云控制台里面设置3306端口</p><h3 id="设置开机启动"><a href="#设置开机启动" class="headerlink" title="设置开机启动"></a>设置开机启动</h3><blockquote><p>chkconfig mysqld on</p></blockquote><hr><p>至此，我们的mysql数据库就已经安装完成，并能随系统启动和外部访问了。</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;1、服务器：阿里云&lt;br&gt;2、操作系统：Centos7&lt;br&gt;3、使用的的可视化工具Xftp6和Xshell&lt;/p&gt;
+      &lt;p&gt;1、服务器：阿里云&lt;br&gt;2、操作系统：Centos7&lt;br&gt;3、使用的的可视化工具Xftp6和Xshell&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;所有平台的 MySQL 下载地址为： &lt;a href=&quot;https://dev.mysql.com/downloads/mysql/&quot; ta
-      
+&lt;p&gt;所有平台的 MySQL 下载地址为： &lt;a href=&quot;https://dev.mysql.com/downloads/mysql/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MySQL 下载&lt;/a&gt; 。 挑选你需要的 MySQL Community Server 版本及对应的平台。&lt;/p&gt;
     
     </summary>
     
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+      <category term="Centos" scheme="http://yoursite.com/tags/Centos/"/>
     
   </entry>
   
@@ -67,20 +70,20 @@
     <link href="http://yoursite.com/2019/08/06/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85jdk/"/>
     <id>http://yoursite.com/2019/08/06/Linux服务器安装jdk/</id>
     <published>2019-08-06T03:23:46.000Z</published>
-    <updated>2019-08-07T06:06:58.141Z</updated>
+    <updated>2019-09-16T07:42:38.632Z</updated>
     
-    <content type="html"><![CDATA[<p>小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人<br>1、服务器：阿里云<br>2、操作系统：Centos7<br>3、使用的的可视化工具Xftp6和Xshell</p><h3 id="下载jdk-根据自己的需要下载安装包http-www-oracle-com-technetwork-java-javase-downloads-jdk8-downloads-2133151-html"><a href="#下载jdk-根据自己的需要下载安装包http-www-oracle-com-technetwork-java-javase-downloads-jdk8-downloads-2133151-html" class="headerlink" title="下载jdk 根据自己的需要下载安装包http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"></a>下载jdk 根据自己的需要下载安装包<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></h3><p>通过Xfp6 把安装包放在usr/local下<br>通过linux指令去往文件夹的路径下面</p><blockquote><p>cd usr/local</p></blockquote><h3 id="之后解压jdk文件Linux指令tar-zxvf-jdk文件压缩包名"><a href="#之后解压jdk文件Linux指令tar-zxvf-jdk文件压缩包名" class="headerlink" title="之后解压jdk文件Linux指令tar -zxvf jdk文件压缩包名"></a>之后解压jdk文件Linux指令tar -zxvf jdk文件压缩包名</h3><blockquote><p>tar -zxvf jdk-8u72-linux-x64.tar.gz</p></blockquote><h3 id="编辑配置文件profile"><a href="#编辑配置文件profile" class="headerlink" title="编辑配置文件profile"></a>编辑配置文件profile</h3><blockquote><p>vim /etc/profile</p></blockquote><p>这里有几个指令</p><blockquote><p>i 是编辑文本<br>编辑完成之后按Esc键<br>冒号加wq是保存并退出 :wq</p></blockquote><p>在profile文件里面添加环境变量 一定要注意JAVA_HOME的路径和版本别错了</p><blockquote><p>export JAVA_HOME=/usr/local/javaJdk/jdk1.8.0_211<br>export JRE_HOME=${JAVA_HOME}/jre<br>export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib<br>export  PATH=${JAVA_HOME}/bin:$PATH</p></blockquote><h3 id="最后输入"><a href="#最后输入" class="headerlink" title="最后输入"></a>最后输入</h3><blockquote><p>java -version</p></blockquote><p>显示版本号就大功告成了</p>]]></content>
+    <content type="html"><![CDATA[<p>小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人<br>1、服务器：阿里云<br>2、操作系统：Centos7<br>3、使用的的可视化工具Xftp6和Xshell</p><a id="more"></a><h3 id="下载jdk-根据自己的需要下载安装包http-www-oracle-com-technetwork-java-javase-downloads-jdk8-downloads-2133151-html"><a href="#下载jdk-根据自己的需要下载安装包http-www-oracle-com-technetwork-java-javase-downloads-jdk8-downloads-2133151-html" class="headerlink" title="下载jdk 根据自己的需要下载安装包http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"></a>下载jdk 根据自己的需要下载安装包<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></h3><p>通过Xfp6 把安装包放在usr/local下<br>通过linux指令去往文件夹的路径下面</p><blockquote><p>cd usr/local</p></blockquote><h3 id="之后解压jdk文件Linux指令tar-zxvf-jdk文件压缩包名"><a href="#之后解压jdk文件Linux指令tar-zxvf-jdk文件压缩包名" class="headerlink" title="之后解压jdk文件Linux指令tar -zxvf jdk文件压缩包名"></a>之后解压jdk文件Linux指令tar -zxvf jdk文件压缩包名</h3><blockquote><p>tar -zxvf jdk-8u72-linux-x64.tar.gz</p></blockquote><h3 id="编辑配置文件profile"><a href="#编辑配置文件profile" class="headerlink" title="编辑配置文件profile"></a>编辑配置文件profile</h3><blockquote><p>vim /etc/profile</p></blockquote><p>这里有几个指令</p><blockquote><p>i 是编辑文本<br>编辑完成之后按Esc键<br>冒号加wq是保存并退出 :wq</p></blockquote><p>在profile文件里面添加环境变量 一定要注意JAVA_HOME的路径和版本别错了</p><blockquote><p>export JAVA_HOME=/usr/local/javaJdk/jdk1.8.0_211<br>export JRE_HOME=${JAVA_HOME}/jre<br>export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib<br>export  PATH=${JAVA_HOME}/bin:$PATH</p></blockquote><h3 id="最后输入"><a href="#最后输入" class="headerlink" title="最后输入"></a>最后输入</h3><blockquote><p>java -version</p></blockquote><p>显示版本号就大功告成了</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人&lt;br&gt;1、服务器：阿里云&lt;br&gt;2、操作系统：Centos7&lt;br&gt;3、使用的的可视化工具Xftp6和Xshell&lt;/p&gt;
-&lt;h3 id=&quot;下载jdk-根据自己的需要下载安装包http-www-
-      
+      &lt;p&gt;小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人&lt;br&gt;1、服务器：阿里云&lt;br&gt;2、操作系统：Centos7&lt;br&gt;3、使用的的可视化工具Xftp6和Xshell&lt;/p&gt;
     
     </summary>
     
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+      <category term="Contos" scheme="http://yoursite.com/tags/Contos/"/>
     
   </entry>
   

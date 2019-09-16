@@ -191,6 +191,115 @@
 
 
   
+    <article id="post-安装docker和使用docker安装rabbiemq容器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class=" article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	      <a class="article-title" href="/2019/09/16/安装docker和使用docker安装rabbiemq容器/" target="_blank">安装docker和使用docker安装rabbiemq容器</a>
+        
+    </h1>
+  
+
+
+  
+  
+<a href="/2019/09/16/安装docker和使用docker安装rabbiemq容器/" class="archive-article-date">
+        <time datetime="2019-09-16T04:25:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-16</time>
+</a>
+
+  
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h3><blockquote>
+<p>yum install docker</p>
+</blockquote>
+<hr>
+<h3 id="启动docker"><a href="#启动docker" class="headerlink" title="启动docker"></a>启动docker</h3><blockquote>
+<p>systemctl start docker<br>停止docker<br>systemctl stop docker<br>重启docker<br>systemctl restart  docker</p>
+</blockquote>
+<hr>
+<h3 id="查看版本-显示版本号即成功"><a href="#查看版本-显示版本号即成功" class="headerlink" title="查看版本 显示版本号即成功"></a>查看版本 显示版本号即成功</h3><blockquote>
+<p>docker -v</p>
+</blockquote>
+<hr>
+<h3 id="下载rabbitmq-去官网搜索"><a href="#下载rabbitmq-去官网搜索" class="headerlink" title="下载rabbitmq   去官网搜索"></a>下载rabbitmq   <a href="https://hub.docker.com/search/?q=rabbitmq&type=image" title="去官网搜索" target="_blank" rel="noopener">去官网搜索</a></h3><blockquote>
+<p>也可以使用命令搜索    docker search 容器名称<br>docker search rabbitmq</p>
+</blockquote>
+<hr>
+<h3 id="下载rabbitmq-使用命令docker-pull-容器名称"><a href="#下载rabbitmq-使用命令docker-pull-容器名称" class="headerlink" title="下载rabbitmq   使用命令docker pull 容器名称"></a>下载rabbitmq   使用命令docker pull 容器名称</h3><blockquote>
+<p>docker pull rabbitmq:3.8.0-rc.1-management</p>
+</blockquote>
+<hr>
+<h3 id="查看下载的容器"><a href="#查看下载的容器" class="headerlink" title="查看下载的容器"></a>查看下载的容器</h3><blockquote>
+<p>docker images</p>
+</blockquote>
+<hr>
+<h3 id="运行rabbitmq"><a href="#运行rabbitmq" class="headerlink" title="运行rabbitmq"></a>运行rabbitmq</h3><blockquote>
+<p>-d：后台运行 -p:设置端口 –name:自定义名称 90cce17c1af8:镜像id<br>docker run -d -p 5672:5672 -p 15672:15672 –name myrabbitmq 90cce17c1af8</p>
+</blockquote>
+<hr>
+<h3 id="查看运行"><a href="#查看运行" class="headerlink" title="查看运行"></a>查看运行</h3><blockquote>
+<p>docker ps -a</p>
+</blockquote>
+<hr>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><blockquote>
+<p>ip:15672 显示登陆页面即为成功<br>登录名：guest<br>密码：guest</p>
+</blockquote>
+<h3 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h3><blockquote>
+<p>退出一个正在运行的容器<br>docker stop 容器id<br>启动一个已经停止的容器，先使用docker ps -a命令查看容器信息，再使用donker start 容器id 启动<br>删除容器，先关闭容器再使用docker rm 容器id命令删除容器</p>
+</blockquote>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2019/09/16/安装docker和使用docker安装rabbiemq容器/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-linux安装mysql" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

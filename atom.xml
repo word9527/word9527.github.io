@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-16T06:59:36.079Z</updated>
+  <updated>2019-09-16T10:12:05.432Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用docker安装elasticsearch</title>
+    <link href="http://yoursite.com/2019/09/16/%E4%BD%BF%E7%94%A8docker%E5%AE%89%E8%A3%85elasticsearch/"/>
+    <id>http://yoursite.com/2019/09/16/使用docker安装elasticsearch/</id>
+    <published>2019-09-16T09:37:53.000Z</published>
+    <updated>2019-09-16T10:12:05.432Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="搜索镜像"><a href="#搜索镜像" class="headerlink" title="搜索镜像"></a>搜索镜像</h3><p><a href="https://hub.docker.com/" target="_blank" rel="noopener">可以去官网搜</a></p><p>也可以直接使用命令行搜索</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker search elasticsearch</span><br></pre></td></tr></table></figure><a id="more"></a><h3 id="由于docker网速太慢我们使用阿里云的镜像加速"><a href="#由于docker网速太慢我们使用阿里云的镜像加速" class="headerlink" title="由于docker网速太慢我们使用阿里云的镜像加速"></a>由于docker网速太慢我们使用阿里云的镜像加速</h3><h4 id="进入官网"><a href="#进入官网" class="headerlink" title="进入官网"></a><a href="https://www.aliyun.com/" target="_blank" rel="noopener">进入官网</a></h4><h4 id="打开控制台"><a href="#打开控制台" class="headerlink" title="打开控制台"></a>打开控制台</h4><p><img src="/2019/09/16/使用docker安装elasticsearch/1.png" alt="打开控制台"></p><h4 id="搜索镜像服务"><a href="#搜索镜像服务" class="headerlink" title="搜索镜像服务"></a>搜索镜像服务</h4><p><img src="/2019/09/16/使用docker安装elasticsearch/2.png" alt="搜索镜像服务"></p><h4 id="修改-etc-docker-daemon-json文件"><a href="#修改-etc-docker-daemon-json文件" class="headerlink" title="修改/etc/docker/daemon.json文件"></a>修改/etc/docker/daemon.json文件</h4><p><img src="/2019/09/16/使用docker安装elasticsearch/3.png" alt="修改/etc/docker/daemon.json文件"></p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"registry-mirrors"</span>: [<span class="string">"加速地址"</span>]</span><br><span class="line">&#125;</span><br><span class="line">复制到/etc/docker/daemon.json文件里</span><br></pre></td></tr></table></figure><h3 id="下载镜像"><a href="#下载镜像" class="headerlink" title="下载镜像"></a>下载镜像</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">也可以不配置阿里云的镜像加速直接下载</span></span><br><span class="line">docker pull elasticsearch</span><br></pre></td></tr></table></figure><h3 id="下载完成之后启动elasticsearch"><a href="#下载完成之后启动elasticsearch" class="headerlink" title="下载完成之后启动elasticsearch"></a>下载完成之后启动elasticsearch</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">es启动默认使用2G内存 在启动的时候设置一下256m</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#-d：后台运行 -p设置端口 --name 自定义名称 elasticsearch:镜像名称/也可以是镜像id</span></span></span><br><span class="line">docker run -e ES_JAVA_OPTS="-Xms256m -Xmx256m" -d -p 9200:9200 -p 9300:9300 --name myes01 elasticsearch</span><br></pre></td></tr></table></figure><h3 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h3><p><img src="/2019/09/16/使用docker安装elasticsearch/4.png" alt="查看运行"></p><h3 id="测试访问ip-9200-出现elasticsearch信息即为成功"><a href="#测试访问ip-9200-出现elasticsearch信息即为成功" class="headerlink" title="测试访问ip:9200 出现elasticsearch信息即为成功"></a>测试访问ip:9200 出现elasticsearch信息即为成功</h3><p><img src="/2019/09/16/使用docker安装elasticsearch/5.png" alt="测试访问"></p>]]></content>
+    
+    <summary type="html">
+    
+      使用docker安装elasticsearch
+    
+    </summary>
+    
+    
+      <category term="Centos" scheme="http://yoursite.com/tags/Centos/"/>
+    
+      <category term="docker" scheme="http://yoursite.com/tags/docker/"/>
+    
+  </entry>
   
   <entry>
     <title>安装docker和使用docker安装rabbiemq容器</title>

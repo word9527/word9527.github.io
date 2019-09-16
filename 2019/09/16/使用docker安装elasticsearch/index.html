@@ -8,23 +8,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>妖刀鬼彻</title>
+  <title>使用docker安装elasticsearch | 妖刀鬼彻</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    <!-- 辅助函数（Helpers）https://hexo.io/zh-cn/docs/helpers.html#%E6%9D%A1%E4%BB%B6%E5%87%BD%E6%95%B0 -->
-    <meta name="keywords" content="个人博客笔记">
-  
-  <meta name="description" content="个人博客笔记">
-<meta name="keywords" content="Java，linux，hexo">
-<meta property="og:type" content="website">
-<meta property="og:title" content="妖刀鬼彻">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="使用docker安装elasticsearch">
+<meta name="keywords" content="Centos,docker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用docker安装elasticsearch">
+<meta property="og:url" content="http://yoursite.com/2019/09/16/使用docker安装elasticsearch/index.html">
 <meta property="og:site_name" content="妖刀鬼彻">
-<meta property="og:description" content="个人博客笔记">
+<meta property="og:description" content="使用docker安装elasticsearch">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/09/16/使用docker安装elasticsearch/1.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/16/使用docker安装elasticsearch/2.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/16/使用docker安装elasticsearch/3.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/16/使用docker安装elasticsearch/4.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/16/使用docker安装elasticsearch/5.png">
+<meta property="og:updated_time" content="2019-09-16T10:12:05.432Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="妖刀鬼彻">
-<meta name="twitter:description" content="个人博客笔记">
+<meta name="twitter:title" content="使用docker安装elasticsearch">
+<meta name="twitter:description" content="使用docker安装elasticsearch">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/16/使用docker安装elasticsearch/1.png">
   
     <link rel="alternative" href="/atom.xml" title="妖刀鬼彻" type="application/atom+xml">
   
@@ -189,126 +193,25 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <script src="/assets/oauthcallback.browser.js"></script>
-  
-  <script>
-    Oauthcallback();
-  </script>
-
-
-  
-    <article id="post-Linux服务器安装jdk" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-使用docker安装elasticsearch" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class=" article-header">
   
   
-    <h1 itemprop="name">
-	
-	      <a class="article-title" href="/2019/08/06/Linux服务器安装jdk/" target="_blank">Linux 服务器安装jdk</a>
-        
+    <h1 class="article-title" itemprop="name">
+      使用docker安装elasticsearch
     </h1>
   
 
 
   
   
-<a href="/2019/08/06/Linux服务器安装jdk/" class="archive-article-date">
-        <time datetime="2019-08-06T03:23:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-06</time>
-</a>
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
 
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-	
-	
-    <p>小白刚买了服务器，从配置到搭建博客遇到了太多的坑，在此记录一下，希望能帮到别人<br>1、服务器：阿里云<br>2、操作系统：Centos7<br>3、使用的的可视化工具Xftp6和Xshell</p>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    <div class="article-pop-out tagcloud">
-      <i class="icon-tuding"></i>
-      <a class="article-tag-list-link color3">置顶</a>
-    </div>
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Contos</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2019/08/06/Linux服务器安装jdk/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-使用docker安装elasticsearch" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class=" article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	      <a class="article-title" href="/2019/09/16/使用docker安装elasticsearch/" target="_blank">使用docker安装elasticsearch</a>
-        
-    </h1>
-  
-
-
-  
-  
 <a href="/2019/09/16/使用docker安装elasticsearch/" class="archive-article-date">
         <time datetime="2019-09-16T09:37:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-16</time>
 </a>
@@ -319,16 +222,78 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-	
-	
     <h3 id="搜索镜像"><a href="#搜索镜像" class="headerlink" title="搜索镜像"></a>搜索镜像</h3><p><a href="https://hub.docker.com/" target="_blank" rel="noopener">可以去官网搜</a></p>
 <p>也可以直接使用命令行搜索</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker search elasticsearch</span><br></pre></td></tr></table></figure>
-    
-    
+
+<a id="more"></a>
+
+<h3 id="由于docker网速太慢我们使用阿里云的镜像加速"><a href="#由于docker网速太慢我们使用阿里云的镜像加速" class="headerlink" title="由于docker网速太慢我们使用阿里云的镜像加速"></a>由于docker网速太慢我们使用阿里云的镜像加速</h3><h4 id="进入官网"><a href="#进入官网" class="headerlink" title="进入官网"></a><a href="https://www.aliyun.com/" target="_blank" rel="noopener">进入官网</a></h4><h4 id="打开控制台"><a href="#打开控制台" class="headerlink" title="打开控制台"></a>打开控制台</h4><p><img src="/2019/09/16/使用docker安装elasticsearch/1.png" alt="打开控制台"></p>
+<h4 id="搜索镜像服务"><a href="#搜索镜像服务" class="headerlink" title="搜索镜像服务"></a>搜索镜像服务</h4><p><img src="/2019/09/16/使用docker安装elasticsearch/2.png" alt="搜索镜像服务"></p>
+<h4 id="修改-etc-docker-daemon-json文件"><a href="#修改-etc-docker-daemon-json文件" class="headerlink" title="修改/etc/docker/daemon.json文件"></a>修改/etc/docker/daemon.json文件</h4><p><img src="/2019/09/16/使用docker安装elasticsearch/3.png" alt="修改/etc/docker/daemon.json文件"></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"registry-mirrors"</span>: [<span class="string">"加速地址"</span>]</span><br><span class="line">&#125;</span><br><span class="line">复制到/etc/docker/daemon.json文件里</span><br></pre></td></tr></table></figure>
+
+<h3 id="下载镜像"><a href="#下载镜像" class="headerlink" title="下载镜像"></a>下载镜像</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">也可以不配置阿里云的镜像加速直接下载</span></span><br><span class="line">docker pull elasticsearch</span><br></pre></td></tr></table></figure>
+
+<h3 id="下载完成之后启动elasticsearch"><a href="#下载完成之后启动elasticsearch" class="headerlink" title="下载完成之后启动elasticsearch"></a>下载完成之后启动elasticsearch</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">es启动默认使用2G内存 在启动的时候设置一下256m</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#-d：后台运行 -p设置端口 --name 自定义名称 elasticsearch:镜像名称/也可以是镜像id</span></span></span><br><span class="line">docker run -e ES_JAVA_OPTS="-Xms256m -Xmx256m" -d -p 9200:9200 -p 9300:9300 --name myes01 elasticsearch</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h3><p><img src="/2019/09/16/使用docker安装elasticsearch/4.png" alt="查看运行"></p>
+<h3 id="测试访问ip-9200-出现elasticsearch信息即为成功"><a href="#测试访问ip-9200-出现elasticsearch信息即为成功" class="headerlink" title="测试访问ip:9200 出现elasticsearch信息即为成功"></a>测试访问ip:9200 出现elasticsearch信息即为成功</h3><p><img src="/2019/09/16/使用docker安装elasticsearch/5.png" alt="测试访问"></p>
 
     
 
+    
+	 
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>万山千水总是情,就给1块行不行<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.jpg">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+      <div> 
+        <ul class="post-copyright">
+          <li>
+            <strong>本文作者：</strong>
+            妖刀鬼彻
+          </li>
+          <li>
+            <strong>本文链接：</strong>
+            <a href="http://yoursite.com/2019/09/16/使用docker安装elasticsearch/" title="使用docker安装elasticsearch" target="_blank">http://yoursite.com/2019/09/16/使用docker安装elasticsearch/</a>
+          </li>
+          <li>
+            <strong>版权声明： </strong>
+            本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow" target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
+          </li>
+        </ul>
+      </div>
     
 
   </div>
@@ -353,16 +318,76 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2019/09/16/使用docker安装elasticsearch/">展开全文 >></a>
-    </p>
+
     
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/16/使用docker安装elasticsearch/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/16/安装docker和使用docker安装rabbiemq容器/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">安装docker和使用docker安装rabbiemq容器</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -377,281 +402,57 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-安装docker和使用docker安装rabbiemq容器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class=" article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	      <a class="article-title" href="/2019/09/16/安装docker和使用docker安装rabbiemq容器/" target="_blank">安装docker和使用docker安装rabbiemq容器</a>
-        
-    </h1>
-  
-
-
-  
-  
-<a href="/2019/09/16/安装docker和使用docker安装rabbiemq容器/" class="archive-article-date">
-        <time datetime="2019-09-16T04:25:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-16</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-	
-	
-    <h3 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h3><blockquote>
-<p>yum install docker</p>
-</blockquote>
-<hr>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Contos</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2019/09/16/安装docker和使用docker安装rabbiemq容器/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#搜索镜像"><span class="toc-number">1.</span> <span class="toc-text">搜索镜像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#由于docker网速太慢我们使用阿里云的镜像加速"><span class="toc-number">2.</span> <span class="toc-text">由于docker网速太慢我们使用阿里云的镜像加速</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#进入官网"><span class="toc-number">2.1.</span> <span class="toc-text">进入官网</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#打开控制台"><span class="toc-number">2.2.</span> <span class="toc-text">打开控制台</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#搜索镜像服务"><span class="toc-number">2.3.</span> <span class="toc-text">搜索镜像服务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#修改-etc-docker-daemon-json文件"><span class="toc-number">2.4.</span> <span class="toc-text">修改/etc/docker/daemon.json文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下载镜像"><span class="toc-number">3.</span> <span class="toc-text">下载镜像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下载完成之后启动elasticsearch"><span class="toc-number">4.</span> <span class="toc-text">下载完成之后启动elasticsearch</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#查看端口"><span class="toc-number">5.</span> <span class="toc-text">查看端口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#测试访问ip-9200-出现elasticsearch信息即为成功"><span class="toc-number">6.</span> <span class="toc-text">测试访问ip:9200 出现elasticsearch信息即为成功</span></a></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
 
+
+
+
+
+
+
+  <div id="giteement-ctn"></div>
   
-    <article id="post-linux安装mysql" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class=" article-header">
+    <link rel="stylesheet" href="/assets/default.css">
+    <script src="/assets/giteement.browser.js"></script>
   
-  
-    <h1 itemprop="name">
-	
-	      <a class="article-title" href="/2019/08/07/linux安装mysql/" target="_blank">linux安装mysql</a>
-        
-    </h1>
-  
-
-
-  
-  
-<a href="/2019/08/07/linux安装mysql/" class="archive-article-date">
-        <time datetime="2019-08-07T05:30:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-07</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-	
-	
-    <p>1、服务器：阿里云<br>2、操作系统：Centos7<br>3、使用的的可视化工具Xftp6和Xshell</p>
-<hr>
-<p>所有平台的 MySQL 下载地址为： <a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">MySQL 下载</a> 。 挑选你需要的 MySQL Community Server 版本及对应的平台。</p>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Centos</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2019/08/07/linux安装mysql/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
+  <script>
+  <!-- id: "使用docker安装elasticsearch" -->
+  var giteement = new Giteement({
+    id: '20190916173753',
+    owner: 'daohao9527',
+    repo: 'hexocomment',
+    backcall_uri: 'https://word9527.github.io/',
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+    oauth: {
+      client_id: 'fa64d1626588b5ba43b549974c8f776f0c45afaeec15c0d82ea0d3e8c46c5fd7',
+      client_secret: '00dffc0e1d65ec219866528d8689c463f09cf18e867e927bf9e7db2599c0f46c'
+    },
+  })
+  giteement.render('giteement-ctn')
+  </script>
 
 
 
 
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class=" article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	      <a class="article-title" href="/2019/08/06/hello-world/" target="_blank">Hello World</a>
-        
-    </h1>
-  
 
 
-  
-  
-<a href="/2019/08/06/hello-world/" class="archive-article-date">
-        <time datetime="2019-08-06T02:50:51.364Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-06</time>
-</a>
-
-  
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2019/08/06/hello-world/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -689,8 +490,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
